@@ -1,9 +1,7 @@
 # phishing-analysis-agent
 
 
-Simulates real-world SOC Level 1 phishing triage by automating IOC extraction, threat enrichment, and risk classification, reducing manual analyst workload.
-Combines rule-based detection with AI-assisted analysis phishing email triage tool built with OpenClaw, Claude, and the VirusTotal API. Paste a suspicious email into Discord and get a structured threat analysis report with live threat intelligence data in seconds.
-
+Simulates real-world SOC Level 1 phishing triage by automating IOC extraction, threat enrichment, and risk classification. Built with OpenClaw, Claude Haiku, and the VirusTotal API, paste a suspicious email into Discord and get a structured threat intelligence report in seconds.
 
 ## Demo
 
