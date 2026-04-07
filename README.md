@@ -1,7 +1,9 @@
 # phishing-analysis-agent
 
-Simulates real-world SOC Level 1 phishing triage by automating IOC extraction, threat enrichment, and risk classification.
-An AI-powered phishing email triage tool built with OpenClaw, Claude, and the VirusTotal API. Paste a suspicious email into Discord and get a structured threat analysis report with live threat intelligence data in seconds.
+
+Simulates real-world SOC Level 1 phishing triage by automating IOC extraction, threat enrichment, and risk classification, reducing manual analyst workload.
+Combines rule-based detection with AI-assisted analysis phishing email triage tool built with OpenClaw, Claude, and the VirusTotal API. Paste a suspicious email into Discord and get a structured threat analysis report with live threat intelligence data in seconds.
+
 
 ## Demo
 
@@ -40,12 +42,41 @@ Verdict: Confirmed phishing email using established malicious infrastructure to 
 Recommendation: BLOCK
 ```
 
+---
+
+### Live Demo (Discord Bot)
+
+
+![Phishing Demo](./assets/demo-phishing-analysis.png)
+
+
+
+
+
+![Phishing Demo](./assets/demo-clean-analysis.png)
+
+
+
+
+---
+
+## Key Features
+
+- Automated IOC extraction (domains, URLs, IPs)
+- Real-time threat enrichment using VirusTotal API
+- Risk classification with confidence scoring
+- Detection of phishing techniques:
+  - Typosquatting
+  - Subdomain spoofing
+  - Social engineering tactics
+- Structured SOC-style reporting output
+- Discord bot interface for real-time analysis
 
 ---
 
 ## How It Works
 
-1. You @mention the agent in Discord with a raw email or headers
+1. In Discord, you paste a raw email or headers
 2. The agent extracts all IOCs — sender domain, URLs, IP addresses
 3. It queries the [VirusTotal API](https://www.virustotal.com/) for each domain/URL
 4. It combines rule-based analysis with AI reasoning and live threat intelligence to produce a structured report
@@ -152,6 +183,7 @@ Developed as a hands-on security engineering project to simulate SOC Level 1 phi
 - Phishing indicators: typosquatting, subdomain spoofing, urgency tactics
 - AI agent configuration and prompt engineering
 - Automating repetitive security analyst workflows
+- Designed to avoid overconfidence by incorporating confidence scoring and evidence-based conclusions
 
 ---
 
